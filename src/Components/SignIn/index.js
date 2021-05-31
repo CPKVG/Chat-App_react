@@ -34,9 +34,9 @@ const SignIn = (props) => {
 
   const EmailSignInInput = () => (
     <div className = "email" >
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+      <input type="email" placeholder = "Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
 
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+      <input type="password" placeholder = "Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
 
       <button onClick={() => handleSubmit()}>Sign In</button>
     </div>

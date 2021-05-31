@@ -8,6 +8,15 @@ import SignIn from './../SignIn'
 import SignUp from './../SignUp'
 
 
+const SignOut = () => {
+  return(
+    <span onClick={() => auth.signOut()}>
+    LogOut
+    </span>
+  )
+
+}
+
 
 //this will be anchor point for everything related to chat application
 const ChatApp = () => {
@@ -19,11 +28,9 @@ const ChatApp = () => {
   
         <section>
             {user ? <Messenger /> : <SignIn/>} 
-            {user ? null : <SignUp/>} 
-            <span onClick={() => auth.signOut()}>
-                  LogOut
-            </span>
-            {/* {{user ? <UploadScreen/> : null}  */}
+            {user ? <SignOut/> : <SignUp/>}
+
+
         </section>
   
       </div>

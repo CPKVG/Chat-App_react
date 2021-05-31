@@ -14,6 +14,12 @@ const Signup = props => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errors, setErrors] = useState([]);
+  const [showInput, setShowInput] = useState(false)
+
+
+  //hide & show toggle for email input 
+  const toggleEmailInput = () => setShowInput(prevCheck => !prevCheck)
+
 
   const reset = () => {
     setDisplayName('');
@@ -46,12 +52,10 @@ const Signup = props => {
 
   }
 
-//   const configAuthWrapper = {
-//     headline: 'Registration'
-//   };
 
-  return (
-    // <AuthWrapper {...configAuthWrapper}>
+
+  const FormDisplay = () => {
+    return (
       <div className="formWrap">
 
         {errors.length > 0 && (
@@ -102,11 +106,28 @@ const Signup = props => {
 
           <button type="submit">
             Register
-            </button>
+          </button>
         </form>
       </div>
-    // </AuthWrapper>
+    )
+  }
+
+//   const configAuthWrapper = {
+//     headline: 'Registration'
+//   };
+
+  return (
+    // <AuthWrapper {...configAuthWrapper}>
+    <div className = "wrap">
+      <button onClick={() => toggleEmailInput()}>
+            Register with Email
+      </button>
+
+      { showInput ? <FormDisplay /> : null }   
+
+    </div>
   );
+
 }
 
 export default Signup;
