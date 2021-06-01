@@ -15,8 +15,8 @@ You also need to create an account with firebase, start a project and retrive it
 Insert the API in `src/firebase/config.js`
 
 
-Firebase's official doc on setting up firebase is kinda hard to follow so, use the unoffical one instead
-`https://www.codegrepper.com/code-examples/shell/how+to+install+firebase+in+react+js`
+Setting up Firebase with react.js
+(https://www.codegrepper.com/code-examples/shell/how+to+install+firebase+in+react+js)
 
 
 
