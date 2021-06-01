@@ -11,12 +11,15 @@ This project is currently in development. Will include two factor autheniticatio
 Clone down this repository. You will need `node`, `npm` and `firebase` installed globally on your machine.  
 
 ## Setting up Firebase
-You also need to create an account with firebase, start a project and retrive it's API
+You also need to create an account with firebase 
+https://firebase.google.com/
+
+start a project and retrive it's API
 Insert the API in `src/firebase/config.js`
 
 
 Setting up Firebase with react.js
-(https://www.codegrepper.com/code-examples/shell/how+to+install+firebase+in+react+js)
+https://www.codegrepper.com/code-examples/shell/how+to+install+firebase+in+react+js
 
 
 
